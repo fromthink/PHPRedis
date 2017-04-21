@@ -2,9 +2,10 @@
 
 namespace TargetLiu\PHPRedis\Cache;
 
+use Illuminate\Cache\TaggableStore;
 use Illuminate\Contracts\Cache\Store;
 
-class PHPRedisStore implements Store
+class PHPRedisStore extends TaggableStore implements Store
 {
 
     /**
